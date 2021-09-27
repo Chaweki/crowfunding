@@ -1,0 +1,15 @@
+.header  .nav{
+    display: none;
+}
+.header input:checked + div .nav{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+.link{
+    @apply  font-semibold text-lg text-black p-4 ;
+}

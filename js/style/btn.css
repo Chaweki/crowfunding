@@ -1,0 +1,38 @@
+.btn-green, .btn-green-thank{
+    @apply rounded-full py-4 px-10 bg-btn-green  font-bold text-white  m-3;
+}
+
+.btn-green-modal{
+    @apply rounded-full py-4 px-4 bg-btn-green  font-bold text-white w-5/6  m-3 mr-0;
+}
+.btn-gray{
+    @apply rounded-full py-4 px-10 bg-gray-300 font-bold text-white  m-3;
+}
+.btn-trans{
+    @apply rounded-full  w-24   font-bold text-black border my-3 text-center relative;
+}
+.btn-bookmark{
+
+    position: relative;
+    z-index: 1;
+}
+@media screen and (min-width:768px){
+    .btn-bookmark::after{
+        content:'Bookmark';
+        font-weight: 700;
+        height: 100%;
+        padding: 1rem 2.5rem ;
+        color:#828282;
+        background: #F4F4F4;
+        border-radius: 9999px;
+        margin-left: 25px;
+
+    }
+    .btn-bookmark img{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+    }
+
+}

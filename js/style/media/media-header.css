@@ -1,0 +1,31 @@
+@media screen and  (min-width: 768px){
+ 
+.header{
+    @apply bg-hero-desk bg-center bg-no-repeat bg-cover flex justify-center;
+}
+.header input:checked + div  {
+    width: 100%;
+    height: auto;
+    margin:0 auto;
+    background: none 
+
+}
+
+.header input:checked + div label{
+    display:none
+}
+.header input:checked + div .nav{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    position: initial;
+    transform: translate(0,0)
+  
+    
+}
+
+.link{
+    @apply font-normal pt-0 text-sm border-0 text-white
+}
+
+}

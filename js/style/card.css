@@ -1,0 +1,23 @@
+.sub-card{
+    @apply border rounded-lg  my-4 relative;
+}
+.sub-card p{
+    @apply m-6;
+}
+.sub-card-footer{
+    display: none;
+}
+
+.card{
+    @apply bg-white rounded-lg  w-10/12 mx-auto mb-5 p-4  text-gray-400 shadow max-w-screen-md;
+}
+.card-modal-thank{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+.card-modal{
+    margin:121px auto
+
+}

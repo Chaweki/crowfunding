@@ -1,0 +1,90 @@
+@import 'style/btn.css';
+@import 'style/card.css';
+@import 'style/header.css';
+@import 'style/input.css';
+@import 'style/nav.css';
+@import 'style/modal.css';
+@import 'style/media.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+    font-size: 14px;
+}
+
+
+
+.before::before{
+    content: url(images/logo-mastercraft.svg);
+    position: absolute;
+    top:0;
+    transform: translate(-50%,-50%);
+
+}
+
+h1{
+    @apply text-2xl  font-bold text-black m-6;
+}
+h2{
+    @apply text-xl font-bold text-black m-1.5;
+}
+h3{
+    @apply text-base font-bold text-black ;
+}
+
+.number-black{
+    @apply text-3xl font-bold text-black m-1.5;
+
+}
+.number-gray{
+    @apply text-2xl font-bold text-gray-400 m-1.5;
+}
+.pledge{
+    @apply text-cyan font-medium
+}
+.sub-card .pledge{
+    @apply  mx-0 my-1;
+}
+.progress {
+    position: relative;
+    margin: 2rem auto;
+    height: 0.8rem;
+    width: 90%;
+    background-color: #F4F4F4;
+    border-radius: 50px; 
+}
+.progress-barre{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 80%;
+    background: hsl(176, 50%, 47%);
+    border-radius: 50px;
+
+}
+
+.check-container{
+    display: flex;
+    align-content: center;
+    margin: 1.25rem;
+   
+}
+.check{
+    position: relative;
+    align-self: center;
+    padding: 0.7rem;
+    margin-right: 0.8rem;
+    height: 1.2rem;
+    width: 1.2rem;
+    border: 1px solid #F0F0F0;
+    border-radius: 50%
+}
+@media screen and  (min-width: 768px){
+   body{
+        font-size: 16px;
+    }
+}
+
+
+
